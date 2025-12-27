@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="admin-title">Teacher Dashboard</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div class="admin-container">
+
+        <!-- LEFT MENU -->
+        <div class="sidebar">
+            <h2>Teacher Menu</h2>
+            <ul>
+                <li><a href="#schedule">Schedule Appointment</a></li>
+                <li><a href="#approve">Approve Appointments</a></li>
+                <li><a href="#appointmentsSection">All Appointments</a></li>
+                <li><a href="#messagesSection">Messages</a></li>
+            </ul>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="content">
+
+            <!-- SCHEDULE APPOINTMENT -->
+            <section id="schedule" class="section-box">
+                <h2>Schedule Appointment</h2>
+                <form id="scheduleForm">
+                    <label>Student Name:</label>
+                    <input type="text" id="studentNameInput" placeholder="Enter student name">
+
+                    <label>Date & Time:</label>
+                    <input type="datetime-local" id="dateTimeInput">
+
+                    <label>Reason:</label>
+                    <textarea id="reasonInput" placeholder="Enter reason"></textarea>
+
+                    <button type="button" id="addAppointmentBtn">Schedule</button>
+                    <p id="scheduleMsg"></p>
+                </form>
+            </section>
+
+            <!-- APPROVE APPOINTMENTS -->
+            <section id="approve" class="section-box">
+                <h2>Approve Student Appointments</h2>
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date/Time</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- ALL APPOINTMENTS -->
+            <section id="appointmentsSection" class="section-box">
+                <h3>All Appointments</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Date/Time</th>
+                            <th>Reason</th>
+                            <th>Source</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="appointmentsTableBody">
+
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- MESSAGES -->
+            <section id="messagesSection" class="section-box">
+                <h2>Messages</h2>
+                <div id="messagesList" class="messages-list">
+                    
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script type="module" src="/assets/js/teacher-dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "project4",
+  "version": "1.0.0",
+  "description": "A web-based appointment booking system for students and teachers that enables scheduling, approving, and managing appointments efficiently.  \r The system allows students to search teachers by subject, send appointment requests, and communicate via messages. Teachers can approve, reject, or schedule appointments themselves. Admins can manage students and teachers.",
+  "main": "setAdminClaim.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArpitaaRajput/student-teacher-appointment-booking-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArpitaaRajput/student-teacher-appointment-booking-system/issues"
+  },
+  "homepage": "https://github.com/ArpitaaRajput/student-teacher-appointment-booking-system#readme",
+  "dependencies": {
+    "firebase-admin": "^13.6.0"
+  }
+}

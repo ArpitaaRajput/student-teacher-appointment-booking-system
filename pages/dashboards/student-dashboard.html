@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="admin-title">Student Dashboard</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div class="admin-container">
+
+        <div class="sidebar">
+            <h2>Student Dashboard</h2>
+            <ul>
+                <li><a href="#searchTeacher">Search Teacher</a></li>
+                <li><a href="#bookappointement">Book Appointment</a></li>
+                <li><a href="#sendMessage">Send Messages</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <!-- SEARCH TEACHER -->
+            <section class="section-box" id="searchTeacher">
+                <h2>Search Teacher</h2>
+                <input type="text" placeholder="Enter subject name..." class="input" id="subjectInput">
+                <button class="btn" onclick="searchTeacher()">Search</button>
+                <div id="teacherList"></div>
+            </section>
+
+            <!-- BOOK APPOINTMENT -->
+            <section class="section-box" id="bookappointment">
+                <h2>Book Appointment</h2>
+                <input type="text" id="teacherIdInput" class="input" placeholder="Enter Teacher ID">
+                <input type="date" id="dateInput" class="input">
+                <input type="time" id="timeInput" class="input">
+                <button class="btn" onclick="bookAppointment()">Book Appointment</button>
+                <p id="appointmentMsg"></p>
+            </section>
+
+            <!-- SEND MESSAGE -->
+            <section class="section-box" id="sendMessage">
+                <h2>Send Message</h2>
+                <form id="msgForm">
+                    <label>Teacher ID:</label>
+                    <input type="text" id="teacherIdMessage" placeholder="Enter teacher ID">
+
+                    <label>Message:</label>
+                    <textarea id="msgInput" placeholder="Enter your message"></textarea>
+
+                    <button type="button" id="sendMsgBtn">Send</button>
+                    <p id="msgStatus"></p>
+                </form>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="/assets/js/student-dashboard.js"></script>
+
+</body>
+
+</html>

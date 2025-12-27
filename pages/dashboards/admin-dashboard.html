@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="admin-title">Admin Dashboard</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <div class="admin-container">
+
+        <!-- LEFT MENU -->
+        <div class="sidebar">
+            <h2>Admin Menu</h2>
+            <ul>
+                <li><a href="#addTeacher">Add Teacher</a></li>
+                <li><a href="#manageTeacher">Update/Delete Teacher</a></li>
+                <li><a href="#approveStudent">Approve Students</a></li>
+            </ul>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="content">
+
+            <!-- ADD TEACHER SECTION -->
+            <section id="addTeacher" class="section-box">
+                <h2>Add Teacher</h2>
+                <form id="addTeacherForm">
+                    <label>ID:</label>
+                    <input type="text" id="teacherID" placeholder="Enter teacher id">
+
+                    <label>Name:</label>
+                    <input type="text" id="teacherName" placeholder="Enter teacher name">
+
+                    <label>Department:</label>
+                    <input type="text" id="teacherDept" placeholder="Enter department">
+
+                    <label>Subject:</label>
+                    <input type="text" id="teacherSubject" placeholder="Enter subject">
+
+                    <label>Email:</label>
+                    <input type="email" id="teacherEmail" placeholder="Enter email">
+
+                    <!-- <label>Password:</label>
+                    <input type="password" id="teacherPassword" placeholder="Enter "> -->
+
+                    <button type="submit">Add Teacher</button>
+                </form>
+
+            </section>
+
+            <!-- UPDATE & DELETE -->
+            <section id="manageTeacher" class="section-box">
+                <h2>Update / Delete Teacher</h2>
+
+                <table id="teacherTable">
+                    <thead>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Subject</th>
+                        <th>Actions</th>
+                    </thead>
+
+                    <tbody>
+                        
+                    </tbody>
+
+                </table>
+            </section>
+
+            <!-- APPROVE STUDENT SECTION -->
+            <section id="approveStudent" class="section-box">
+                <h2>Approve Student Registrations</h2>
+
+                <table id="studentTable">
+                    <thead>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </thead>
+
+                    <tbody>
+                        
+                    </tbody>
+
+                </table>
+            </section>
+
+        </div>
+    </div>
+
+    <script type="module" src="/assets/js/admin-protect.js"></script>
+    <script type="module" src="/assets/js/admin-dashboard.js"></script>
+</body>
+
+</html>
