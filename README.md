@@ -197,7 +197,7 @@ The **Student–Teacher Appointment Booking System** follows a structured workfl
 ---
 
 ## 🌐 Live Demo
-🔗 [Netlify Link](https://student-teacher-booking-appointment-system.netlify.app/)  
+🔗 Check out the live project here: [Netlify Link](https://student-teacher-appointment-system.netlify.app/)  
 
 ---
 
