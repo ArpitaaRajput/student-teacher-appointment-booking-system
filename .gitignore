@@ -1,0 +1,22 @@
+# Firebase
+.firebase/
+firestore-debug.log
+firebase-config.js
+firebase.json
+
+# Firebase Admin SDK key
+serviceAccountKey-project.json
+
+# Environment files
+.env
+.env.local
+
+# Node modules
+node_modules/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
